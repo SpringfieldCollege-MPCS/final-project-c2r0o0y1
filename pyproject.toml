@@ -1,0 +1,28 @@
+[project]
+name = "myapp"
+version = "0.0.1"
+description = "A Terminal User Interface (TUI) and interacitve REPL shell for myapp"
+authors = [
+    {name = "Student Name", email="studentname@springfieldcollege.edu"}
+]
+requires-python= ">=3.10"
+dependencies = [
+    "sqlmodel==0.0.8",
+    "textual[dev]==0.19.1",
+    "click",
+    "prompt_toolkit"
+]
+
+[project.scripts]
+myapp-create-db= "myapp.db:create_db_and_tables" # this command will create our database for us
+myapp-repl = "myapp.repl.app:cli" # this will launch the repl
+myapp-tui = "myapp.tui.app:main" # this will launch the tui
+
+[build-system]
+requires = [
+    "setuptools >= 35.0.2",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+myapp = ["*.db"]

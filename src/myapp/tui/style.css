@@ -1,0 +1,22 @@
+#app-grid {
+    layout: grid;
+    grid-size: 2 1;
+    grid-columns: 1fr;
+    grid-rows: 1fr;
+}
+
+#right {
+    height: 1fr;
+    align: center middle;
+}
+
+Input {
+    margin: 1;
+}
+
+
+Button {
+    width:16;
+    align: center middle;
+}
+
