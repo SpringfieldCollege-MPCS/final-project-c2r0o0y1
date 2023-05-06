@@ -3,7 +3,7 @@ name = "myapp"
 version = "0.0.1"
 description = "A Terminal User Interface (TUI) and interacitve REPL shell for myapp"
 authors = [
-    {name = "Student Name", email="studentname@springfieldcollege.edu"}
+    {name = "Chhandak Roy", email="croy2@springfieldcollege.edu"}
 ]
 requires-python= ">=3.10"
 dependencies = [
