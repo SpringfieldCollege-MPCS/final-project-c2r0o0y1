@@ -8,16 +8,23 @@ from .console import console
 
 ## You may change these
 class Command(str, Enum):
+    select = 'select'
     add = 'add'
     remove = 'remove'
     quit = 'quit'
+    reset = 'reset'
+    complete = 'complete'
+
 
 def generate_completer(items):
     ids = get_ids(items)
     ids = dict(zip(ids, [None]*len(ids)))
     completer = NestedCompleter.from_nested_dict({
+        'select': ids,
         'remove': ids,
+        'complete': ids,
         'add': None,
+        'reset': dict(company=None,user=None),
         'quit': None
         })
     return completer

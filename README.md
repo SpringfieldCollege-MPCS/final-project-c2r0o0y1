@@ -1,3 +1,15 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/8TvOoJPN)
+
+# Password Management System
+- For my password management system app, I followed the 8-step process of creating a database to store and manage information about companies, user/employee of companies and password. This process helped me to design a database that effectively stores and manages the required data in a structured and organized way. 
+- Firstly, I defined the database's purpose, which was to store and manage information about companies, users, and passwords for a password management system. Then I gathered information on the different types of data that needed to be saved, such as company name, username, date, email, website on which their password was stored, and passwords. The database would require three tables, according to my calculations: Company, User, and Password. I listed the columns that would be required for each table to hold the necessary information. 
+Then, for each table, I identified primary keys that would be used to uniquely identify each record in the table. The user_ID, for example, would be the primary key for the User table. I also discovered relationships between the tables, such as the one-to-many relationship between the company table and the user table (a single company can have many users, but each user belongs to only one company). After identifying the tables and relationships, I improved the design by examining the tables and columns to ensure they would successfully store and manage the necessary data. I made changes as needed, adding or removing columns.
+
+- Finally normalized the database design to ensure that it was in the third normal form. It was necessary to ensure that each table does not have a column that contains a list, that there are no transitive dependencies, and that each non-key column is only dependent on the primary key. Overall, I was able to design and build a database for my project to develop an event management system using this eight-step method. By carefully considering the database's purpose, gathering data, identifying tables and relationships, refining the design, and normalizing the database to a third normal form, I was able to create a structured and organized database that efficiently stores and manages information about Company, User, and Password.
+
+## Database Design
+
+![ERDiagram](Screenshot%202023-04-25%20at%2022-11-29%20Online%20FlowChart%20&%20Diagrams%20Editor%20-%20Mermaid%20Live%20Editor.png)
 # Myapp Template
 
 
